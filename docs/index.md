@@ -36,3 +36,9 @@ HTML as created:
 <li>This is yet another item and should be at the original indent level</li>
 </ul>
 ```
+
+### Solution: upstream fix or use custom extension
+
+Lots of good discussion and detail was found in [mkdocs issue 545](https://github.com/mkdocs/mkdocs/issues/545)
+
+(Not implemented here yet.)
