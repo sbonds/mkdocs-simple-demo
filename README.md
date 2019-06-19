@@ -19,3 +19,7 @@ Info on setting up a [simple mkdocs CI/CD pipeline](https://stackoverflow.com/qu
 ### [.travis.yml](.travis.yml)
 
 The `GITHUB_TOKEN` variable needs to be defined in the Travis CI GUI as an environment variable for this repository.
+
+## Output
+
+The rendered markdown pages are found at [Simple public demo for mkdocs](https://sbonds.github.io/mkdocs-simple-demo/)

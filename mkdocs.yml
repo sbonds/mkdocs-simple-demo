@@ -9,7 +9,7 @@ theme:
   feature:
     tabs: true
 repo_url: https://github.com/sbonds/mkdocs-simple-demo
-repo_name: 'GitHub source'
+repo_name: 'GitHub'
 edit_uri: tree/master/docs/
 extra:
   contact:
