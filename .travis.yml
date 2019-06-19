@@ -1,0 +1,19 @@
+language: python
+python: 3.7
+branches: master
+install:
+- pip install https://github.com/mkdocs/mkdocs/archive/9ae04213b9e2ed6625217ca0d6db2bf69a0c1205.tar.gz
+
+script: true # Skip script (Don't use this if one already exists)
+
+before_deploy:
+- mkdocs build --verbose --clean --strict
+
+# https://docs.travis-ci.com/user/deployment/pages/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: docs
+  on:
+    branch: master

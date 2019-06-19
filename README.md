@@ -9,3 +9,13 @@ The BSD license was chosen for maximum compatibility with the [`mkdocs`](https:/
 ## Purpose
 
 The main purpose of this repository is for demonstrating bugs or issues with `mkdocs` in a simple public environment.
+
+## Travis CI
+
+Info on setting up a [simple mkdocs CI/CD pipeline](https://stackoverflow.com/questions/50892018/auto-build-an-mkdocs-documentation-in-travis-ci) was found on Stack Overflow. The setup here was modeled on that info.
+
+### Travis CI app linked to GitHub
+
+### [.travis.yml](.travis.yml)
+
+The `GITHUB_TOKEN` variable needs to be defined in the Travis CI GUI as an environment variable for this repository.
