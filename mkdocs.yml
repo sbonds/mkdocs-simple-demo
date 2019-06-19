@@ -16,4 +16,4 @@ extra:
     name: 'Steve Bonds'
     email: 'sbonds@gmail.com'
 markdown_extensions:
-- sane_lists
+- mdx_truly_sane_lists

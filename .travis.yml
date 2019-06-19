@@ -4,6 +4,7 @@ python:
 - "3.7"
 branches: master
 install:
+- pip install mdx_truly_sane_lists
 - pip install https://github.com/mkdocs/mkdocs/archive/9ae04213b9e2ed6625217ca0d6db2bf69a0c1205.tar.gz
 
 script: true # Skip script (Don't use this if one already exists)
