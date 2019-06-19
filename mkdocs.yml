@@ -1,0 +1,15 @@
+site_name: Simple public demo for mkdocs
+theme: 
+  name: material
+  palette:
+    primary: 'white'
+    accent: 'blue'
+  feature:
+    tabs: true
+repo_url: https://github.com/sbonds/mkdocs-simple-demo
+repo_name: 'GitHub source'
+edit_uri: tree/master/docs/
+extra:
+  contact:
+    name: 'Steve Bonds'
+    email: 'sbonds@gmail.com'
