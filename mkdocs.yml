@@ -1,6 +1,6 @@
 site_name: Simple public demo for mkdocs
 theme: 
-  name: material
+  name: mkdocs
   palette:
     primary: 'white'
     accent: 'blue'
