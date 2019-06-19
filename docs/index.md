@@ -41,4 +41,17 @@ HTML as created:
 
 Lots of good discussion and detail was found in [mkdocs issue 545](https://github.com/mkdocs/mkdocs/issues/545)
 
-(Not implemented here yet.)
+#### FIXED via `mdx_truly_sane_lists`
+
+This was added to `mkdocs.yml`:
+
+```YAML
+markdown_extensions:
+- mdx_truly_sane_lists
+```
+
+And an appropriate `pip` command was added to the Travis CI "install" section to load the extension.
+
+That results in this GitHub-compatible behavior:
+
+![Truly Sane Lists extension renders as expected](2019-06-19-14-41-20.png)
