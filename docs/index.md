@@ -55,3 +55,10 @@ And an appropriate `pip` command was added to the Travis CI "install" section to
 That results in this GitHub-compatible behavior:
 
 ![Truly Sane Lists extension renders as expected](2019-06-19-14-41-20.png)
+
+## Demo: nested unordered lists with Markdown-spec spacing (4 spaces)
+
+* This is an unordered list item
+* This is another item
+    * This should appear indented UNDER "This is another item"
+* This is yet another item and should be at the original indent level
