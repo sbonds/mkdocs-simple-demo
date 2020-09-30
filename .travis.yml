@@ -11,6 +11,9 @@ install:
 script: true # Skip script (Don't use this if one already exists)
 
 before_deploy:
+- python --version
+- mkdocs --version
+- pip show mkdocs-material | grep -E ^Version
 - mkdocs build --verbose --clean --strict
 
 # https://docs.travis-ci.com/user/deployment/pages/
