@@ -6,8 +6,9 @@ theme:
   palette:
     primary: 'white'
     accent: 'blue'
-  feature:
-    tabs: true
+  features:
+    # https://squidfunk.github.io/mkdocs-material/upgrading/#upgrading-from-5x-to-6x
+    - navigation.tabs
 repo_url: https://github.com/sbonds/mkdocs-simple-demo
 repo_name: 'GitHub'
 edit_uri: tree/master/docs/
