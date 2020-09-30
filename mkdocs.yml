@@ -2,7 +2,7 @@ site_name: Simple public demo for mkdocs
 nav:
 - home: index.md
 theme: 
-  name: mkdocs
+  name: material
   palette:
     primary: 'white'
     accent: 'blue'
