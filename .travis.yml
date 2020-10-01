@@ -6,7 +6,7 @@ branches: master
 install:
 - pip install mdx_truly_sane_lists
 - pip install https://github.com/mkdocs/mkdocs/archive/9ae04213b9e2ed6625217ca0d6db2bf69a0c1205.tar.gz
-- pip install --ignore-installed mkdocs-material
+- pip install --ignore-installed https://github.com/squidfunk/mkdocs-material/f9f48c09c1e33c64cab27250f597e84906c300d5.tar.gz
 
 script: true # Skip script (Don't use this if one already exists)
 
