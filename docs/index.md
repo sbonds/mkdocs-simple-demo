@@ -62,3 +62,33 @@ That results in this GitHub-compatible behavior:
 * This is another item
     * This should appear indented UNDER "This is another item"
 * This is yet another item and should be at the original indent level
+
+## Test .NET directory
+
+* [dotNET](./dotNET/index.md)
+
+The .NET directory itself gets excluded due to the defaults for `exclude_docs`: [exclude_docs in 1.6.0 docs](https://github.com/mkdocs/mkdocs/blob/1.6.0/docs/user-guide/configuration.md#exclude_docs)
+
+This was new in 1.5 so I'm not clear how .NET gets skipped in 1.4.1, which is the version I was using when I noticed the problem.
+
+* [.NET](./dotNET/index.md)
+
+Using `[.NET](./dotNET/index.md)` generates this warning:
+
+```text
+WARNING -  Doc file 'index.md' contains a link './dotNET/index.md', but the target 'dotNET/index.md' is not found among
+           documentation files.
+DEBUG   -  Reading: doc file with horrible characters +=%#'~^.md
+DEBUG   -  Reading: doc file with spaces.md
+DEBUG   -  Reading: dotNet/index.md
+```
+
+## Test .NET directory under a different name
+
+Copied the contents of the dotNet directory to a new directory by another name:
+
+* [.NET](./notTheName/index.md)
+
+* [Not .NET](./notDotNet/index.md)
+
+Maybe it's something odd that's Windows-specific since I'm doing all my rendering on Windows currently.
