@@ -28,13 +28,13 @@ jobs:
             python --version
             mkdocs --version
             pip show mkdocs-material | grep -E ^Version
-            ls -l
+            ls
             
       - name: Build HTML content from Markdown
         run: mkdocs build --verbose --clean --strict
 
       - name: Show post-build contents of working directory
-        run: ls -l
+        run: ls
 
       - name: Create build artifact of HTML pages
         id: html-content
