@@ -6,6 +6,9 @@ on:
     branches: [ "master" ]
   workflow_dispatch:
 
+permissions:
+  pages: write
+
 jobs:
   build-html:
     runs-on: ubuntu-latest
