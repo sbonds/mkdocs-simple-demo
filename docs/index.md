@@ -39,7 +39,7 @@ architecture-beta
     disk2:T -- B:db
 ```
 
-Shoot... it works great here in the simple environment but not in my messy "real" document collection.
+Shoot... it works great here in the simple environment but not in my messy "real" document collection. It also works nicely on the same PC as the above when running "mkdocs serve", so it's not a local config issue.
 
 Maybe the answer is to make my real document collection simpler or create a new doc collection for architecture diagrams.
 
