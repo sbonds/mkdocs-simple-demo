@@ -36,7 +36,7 @@ jobs:
         id: html-content
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build_outputs_folder/
+          path: site/
 
   # Based on example at https://github.com/actions/upload-pages-artifact
   deploy:
