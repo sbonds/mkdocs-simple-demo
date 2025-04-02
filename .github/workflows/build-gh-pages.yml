@@ -1,0 +1,30 @@
+name: build-gh-pages
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  build-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install nested bullet GitHub-style formatting
+        run: pip install mdx_truly_sane_lists
+      - name: Install mkdocs latest
+        run: pip install mkdocs
+      - name: Install mkdocs-material latest
+        run: pip install mkdocs-material
+
+      # Collect some useful version info
+      - name: Get actual installed versions of certain components
+        run: |
+            python --version
+            mkdocs --version
+            pip show mkdocs-material | grep -E ^Version
+            ls -l
+            
+      - name: Publish results of the HTML build
+        run: mkdocs gh-deploy --verbose --clean --strict
