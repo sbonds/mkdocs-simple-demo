@@ -2,6 +2,10 @@
 
 This exists to demonstrate aspects of mkdocs, such as bugs, in a way where the whole process is easy to understand and reproduce.
 
+## April 2025: Updated to use GitHub actions
+
+Continuing the long history of CI changes in GitHub originating with TravisCI. Hopefully GitHub actions stick around for a while.
+
 ## Demo: nested unordered lists
 
 * This is an unordered list item
