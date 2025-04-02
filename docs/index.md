@@ -65,15 +65,15 @@ That results in this GitHub-compatible behavior:
 
 ## Test .NET directory
 
-* [dotNET](./dotNET/index.md)
+* [dotNet](./dotNet/index.md)
 
 The .NET directory itself gets excluded due to the defaults for `exclude_docs`: [exclude_docs in 1.6.0 docs](https://github.com/mkdocs/mkdocs/blob/1.6.0/docs/user-guide/configuration.md#exclude_docs)
 
 This was new in 1.5 so I'm not clear how .NET gets skipped in 1.4.1, which is the version I was using when I noticed the problem.
 
-* [.NET](./dotNET/index.md)
+* [.NET](./dotNet/index.md)
 
-Using `[.NET](./dotNET/index.md)` generates this warning:
+Using `[.NET](./dotNet/index.md)` generates this warning:
 
 ```text
 WARNING -  Doc file 'index.md' contains a link './dotNET/index.md', but the target 'dotNET/index.md' is not found among
