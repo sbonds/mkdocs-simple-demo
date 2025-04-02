@@ -27,9 +27,21 @@ Test mermaid icons:
 
 ```mermaid
 architecture-beta
-    group aws(logos:aws-lambda)[Lambda]
-    service support(material-symbols:medical-services)[Support] in aws
+    group api(logos:aws-lambda)[API]
+
+    service db(logos:aws-aurora)[Database] in api
+    service disk1(logos:aws-glacier)[Storage] in api
+    service disk2(logos:aws-s3)[Storage] in api
+    service server(logos:aws-ec2)[Server] in api
+
+    db:L -- R:server
+    disk1:T -- B:server
+    disk2:T -- B:db
 ```
+
+Shoot... it works great here in the simple environment but not in my messy "real" document collection.
+
+Maybe the answer is to make my real document collection simpler or create a new doc collection for architecture diagrams.
 
 ## April 2025: Updated to use GitHub actions
 
