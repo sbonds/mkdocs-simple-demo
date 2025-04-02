@@ -26,5 +26,27 @@ jobs:
             pip show mkdocs-material | grep -E ^Version
             ls -l
             
-      - name: Publish results of the HTML build
-        run: mkdocs gh-deploy --verbose --clean --strict
+      - name: Build HTML content from Markdown
+        id: build
+        run: mkdocs build --verbose --clean --strict
+
+      - name: Show post-build contents of working directory
+        run: ls -l
+
+      - name: Create build artifact of HTML pages
+        id: html-content
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build_outputs_folder/
+
+  # Based on example at https://github.com/actions/upload-pages-artifact
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: html-content
+        uses: actions/deploy-pages@v4
