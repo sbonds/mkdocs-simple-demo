@@ -2,6 +2,35 @@
 
 This exists to demonstrate aspects of mkdocs, such as bugs, in a way where the whole process is easy to understand and reproduce.
 
+## April 2025: Issues with (unsupported) Mermaid architecture
+
+Replicating the issue here to have a simpler environment.
+
+Setting up mermaid with custom icons per [https://github.com/squidfunk/mkdocs-material/discussions/7723#discussioncomment-12432104](https://github.com/squidfunk/mkdocs-material/discussions/7723#discussioncomment-12432104)
+
+`mkdocs.yaml`:
+
+```yaml
+extra_javascript:
+  - path: assets/javascript/extra.js
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+```
+
+Created `extra.js` with the content from the above link.
+
+Test mermaid icons:
+
+```mermaid
+architecture-beta
+    group aws(logos:aws-lambda)[Lambda]
+    service support(material-symbols:medical-services)[Support] in aws
+```
+
 ## April 2025: Updated to use GitHub actions
 
 Continuing the long history of CI changes in GitHub originating with TravisCI. Hopefully GitHub actions stick around for a while.

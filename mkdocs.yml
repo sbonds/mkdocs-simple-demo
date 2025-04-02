@@ -16,5 +16,12 @@ extra:
   contact:
     name: 'Steve Bonds'
     email: 'sbonds@gmail.com'
+extra_javascript:
+  - path: assets/javascript/extra.js
 markdown_extensions:
-- mdx_truly_sane_lists
+  - mdx_truly_sane_lists
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
